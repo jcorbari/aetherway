@@ -9,6 +9,10 @@ body {
     flex-direction: column; /* Stack items vertically */
 }
 
+footer {
+    text-align:center;
+}
+
 /* Sketch container styles */
 #sketch-container {
     margin-bottom: 20px;
