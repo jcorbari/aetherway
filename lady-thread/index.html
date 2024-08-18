@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lady Thread Generator</title>
+    <script src="p5.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="sketch-container"></div>
+    <!-- Button to trigger the screenshot -->
+    <button id="screenshotButton">Save!</button>
+    
+    <script src="ladythread.js"></script>
+    <script>
+        let screenshotCounter = 0;
+
+        function saveScreenshot() {
+            screenshotCounter++;
+            let timestamp = new Date().toISOString().replace(/[-:.T]/g, ''); // Format timestamp
+            let filename = 'LadyThread_' + screenshotCounter + '_' + timestamp + '.png';
+            saveCanvas(filename);
+        }
+
+        // Bind the screenshot button click event
+        document.getElementById('screenshotButton').addEventListener('click', function() {
+            saveScreenshot();
+        });
+    </script>
+    <article id="instructions">
+        <h2>Instructions</h2>
+        <ol>
+            <li>Click/Tap image until you find one you love</li>
+            <li>Save it!</li>
+            <li>Free wallpaper?</li>
+            <li>Share under #aetherway</li>
+            <li><a href=''>Turn into an T-Shirt!</a></li>
+        </ol>
+    </article>
+    <article id="about">
+        <h2>About Lady Thread</h2>
+        <p>She's so good with hair that people often call on her to find their thread of thought. If you've lost yours, here's a little prayer to help you find it:
+        <blockquote>Lady Thread, goddess of memory and recollection. I lost my thoughts in my head's tangled mess. Please help me find those loose ends.
+
+        <p>PS: Your hair is the prettiest of all Ladies.</blockquote>
+    <p>This last part is the most important. You see, when dealing with deities, it's important to suck up to them.
+    </article>
+</body>
+<footer>
+    <p>© 2024 aetherway</p>
+</footer>
+</html>
