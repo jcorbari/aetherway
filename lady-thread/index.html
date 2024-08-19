@@ -20,7 +20,7 @@
             screenshotCounter++;
             let timestamp = new Date().toISOString().replace(/[-:.T]/g, ''); // Format timestamp
             let filename = 'LadyThread_' + screenshotCounter + '_' + timestamp + '.png';
-            saveCanvas(filename);
+            saveCanvas(canvas, filename, 'png');
         }
 
         // Bind the screenshot button click event
@@ -31,12 +31,11 @@
     <article id="instructions">
         <h2>Instructions</h2>
         <ol>
-            <li>Hit image or refresh page to shuffle colors.</li>
-            <li>Find one you love.</li>
-            <li>Save it!</li>
+            <li>Click/Tap the image or refresh the page to shuffle colors.</li>
+            <li>Save your favorites!</li>
             <li>Free wallpaper?</li>
             <li>Share it under #aetherway</li>
-            <li><a href=''>Turn it into a unique T-Shirt</a> and help on my mission of making this dimension into a cooler and prettier place!</li>
+            <li><a href=''>Turn it into a unique T-Shirt</a> and support my work!</li>
         </ol>
     </article>
     <article id="about">
